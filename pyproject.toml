@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "grab-mcp"
+dynamic = ["version"]
+description = "MCP server: OpenStreetMap place search, plus links that hand rides and food off to the Grab app"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=2.3,<3",
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "ruff>=0.6"]
+
+[project.scripts]
+grab-mcp = "grab_mcp.server:main"
+
+[tool.hatch.version]
+path = "src/grab_mcp/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/grab_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I", "UP", "S"]
+ignore = ["S101"]  # assert is how pytest checks
