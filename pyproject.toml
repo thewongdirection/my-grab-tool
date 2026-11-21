@@ -7,6 +7,8 @@ name = "grab-mcp"
 dynamic = ["version"]
 description = "MCP server: OpenStreetMap place search, plus links that hand rides and food off to the Grab app"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
 dependencies = [
     "mcp>=2.3,<3",

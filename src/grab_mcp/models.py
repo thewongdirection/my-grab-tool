@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Value types shared by the geocoder, the link builders and the server."""
 
 from __future__ import annotations

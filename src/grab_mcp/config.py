@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Runtime settings, read from environment variables only. Nothing here is secret."""
 
 from __future__ import annotations

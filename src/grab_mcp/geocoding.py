@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Place search over OpenStreetMap's Nominatim service, within its usage policy.
 
 Policy: https://operations.osmfoundation.org/policies/nominatim/

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Markets where Grab's consumer app runs."""
 
 from __future__ import annotations

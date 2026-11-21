@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Builders for links that open the Grab app or GrabFood website.
 
 These never contact Grab. They only format URLs; the person still reviews the

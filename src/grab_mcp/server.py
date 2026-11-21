@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """MCP server exposing OpenStreetMap place search and Grab app hand-off links.
 
 Nothing here books, orders or pays. Ride and food tools return links; the

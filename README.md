@@ -109,3 +109,7 @@ ruff check src tests
 ```
 
 Tests fake every network call, so they need no internet access.
+
+## Licence
+
+MIT, copyright (c) 2026 thewongdirection. See [LICENSE](LICENSE).
